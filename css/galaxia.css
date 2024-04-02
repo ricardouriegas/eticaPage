@@ -17,9 +17,35 @@ h1 {
   /* z-index: 2; */
 }
 
+/* Definir la animación */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animación de escalamiento */
+@keyframes scale-in {
+  from { transform: scale(0.6); }
+  to { transform: scale(1); }
+}
+
+/* Animación de entrada */
+@keyframes blur-in {
+  from { filter: blur(50px); }
+  to { filter: blur(0); }
+}
+
 /* Estilo para el contenido que quieras centrar */
 .contenido-centrado {
   text-align: center; /* Centra el texto horizontalmente */
+  /* animation: fade-in 1s ease-in-out; Usando la animación de desvanecimiento */
+  /* Blur in y fade in */
+  animation: fade-in 1s ease-in-out, blur-in .5s ease-in-out;
+
 
 }
 
