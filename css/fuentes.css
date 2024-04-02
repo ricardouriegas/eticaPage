@@ -12,14 +12,14 @@ button {
     font-style: normal;
 }
 
-.pacifico-titulo {
+h1 {
     font-family: "Pacifico", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 45px;
   }
 
-p {
+body {
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
     font-weight: 1px;
