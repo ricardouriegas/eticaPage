@@ -10,7 +10,7 @@ function mostrarImagen(ruta) {
 }
 
 botonProfesional.addEventListener("click", function(){
-    mostrarImagen("");
+    mostrarImagen("../images/codigoProfesional.png");
 })
 
 botonOrganizacional.addEventListener("click", function(){

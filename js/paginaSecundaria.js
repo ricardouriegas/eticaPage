@@ -39,29 +39,3 @@ balls.forEach((el, i, ra) => {
     }
   );
 });
-
-function mostrarImagen(ruta) {
-  var imagen = document.getElementById("imagen");
-  imagen.src = ruta;
-  imagen.removeAttribute("hidden");
-  imagen.classList.add("mostrar");
-}
-
-// Asignar el evento de clic a cada botón
-document
-  .getElementById("button-ricardo")
-  .addEventListener("click", function () {
-    mostrarImagen("../images/ricardo.png");
-  });
-
-document.getElementById("button-joshua").addEventListener("click", function () {
-  mostrarImagen("../images/joshua.png");
-});
-
-document.getElementById("button-hector").addEventListener("click", function () {
-  mostrarImagen("../images/hector.png");
-});
-
-document.getElementById("button-alex").addEventListener("click", function () {
-  mostrarImagen("../images/alex.png");
-});
