@@ -54,3 +54,8 @@
 .hidden{
   display: hidden;
 }
+
+.imagenMasGrande{
+  height: 38em;
+  width: 50em;
+}

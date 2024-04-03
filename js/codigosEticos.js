@@ -10,14 +10,14 @@ function mostrarImagen(ruta) {
 }
 
 botonProfesional.addEventListener("click", function(){
-    mostrarImagen("../images/codigoProfesional.png");
+    mostrarImagen("../images/codigoEticaProfesional.png");
 })
 
 botonOrganizacional.addEventListener("click", function(){
-    mostrarImagen("");
+    mostrarImagen("../images/codigoEticaOrganizacional.png");
 })
 
 botonMedioAmbiente.addEventListener("click", function(){
-    mostrarImagen("");
+    mostrarImagen("../images/codigoAmbiental.png");
 })
 
