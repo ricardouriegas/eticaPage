@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  overflow: hidden;
   background: #000;
   display: flex; /* Utiliza flexbox */
   justify-content: center; /* Justifica todo al centro horizontalmente */
@@ -45,8 +44,6 @@ h1 {
   /* animation: fade-in 1s ease-in-out; Usando la animación de desvanecimiento */
   /* Blur in y fade in */
   animation: fade-in 1s ease-in-out, blur-in .5s ease-in-out;
-
-
 }
 
 i {
