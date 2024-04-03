@@ -1,0 +1,13 @@
+.container-image{
+    height: 1em;
+    width: 1em;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px; 
+}
+
+.image{
+    height: 10em;
+    width: 10em;
+}

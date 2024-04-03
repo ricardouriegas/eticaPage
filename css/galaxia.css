@@ -16,6 +16,13 @@ h1 {
   /* z-index: 2; */
 }
 
+.contenedor{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Definir la animación */
 @keyframes fade-in {
   from {
