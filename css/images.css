@@ -1,17 +1,52 @@
-.container-image{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    place-items: center;
-    margin-top: 30px; 
+/* Definir la animación */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.image{
-    height: 30em;
-    width: 30em;
+/* Animación de escalamiento */
+@keyframes scale-in {
+  from {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
-.mainContainer{
-    display: flex;
-    flex-direction: column;
+/* Animación de entrada */
+@keyframes blur-in {
+  from {
+    filter: blur(50px);
+  }
+  to {
+    filter: blur(0);
+  }
+}
+
+.container-image {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  margin-top: 30px;
+}
+
+.image {
+  height: 30em;
+  width: 30em;
+}
+
+.mostrar {
+  animation: fade-in 1s ease-in-out, blur-in 0.5s ease-in-out;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  animation: fade-in 1s ease-in-out, blur-in 0.5s ease-in-out;
 }

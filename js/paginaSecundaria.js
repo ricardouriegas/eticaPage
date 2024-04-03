@@ -13,7 +13,7 @@ for (let i = 0; i < numBalls; i++) {
   ball.style.transform = `scale(${Math.random()})`;
   ball.style.width = `${Math.random()}em`;
   ball.style.height = ball.style.width;
-  
+
   balls.push(ball);
   document.body.append(ball);
 }
@@ -22,20 +22,46 @@ for (let i = 0; i < numBalls; i++) {
 balls.forEach((el, i, ra) => {
   let to = {
     x: Math.random() * (i % 2 === 0 ? -11 : 11),
-    y: Math.random() * 12
+    y: Math.random() * 12,
   };
 
   let anim = el.animate(
     [
       { transform: "translate(0, 0)" },
-      { transform: `translate(${to.x}rem, ${to.y}rem)` }
+      { transform: `translate(${to.x}rem, ${to.y}rem)` },
     ],
     {
       duration: (Math.random() + 1) * 2000, // random duration
       direction: "alternate",
       fill: "both",
       iterations: Infinity,
-      easing: "ease-in-out"
+      easing: "ease-in-out",
     }
   );
+});
+
+function mostrarImagen(ruta) {
+  var imagen = document.getElementById("imagen");
+  imagen.src = ruta;
+  imagen.removeAttribute("hidden");
+  imagen.classList.add("mostrar");
+}
+
+// Asignar el evento de clic a cada botón
+document
+  .getElementById("button-ricardo")
+  .addEventListener("click", function () {
+    mostrarImagen("../images/ricardo.png");
+  });
+
+document.getElementById("button-joshua").addEventListener("click", function () {
+  mostrarImagen("../images/joshua.png");
+});
+
+document.getElementById("button-hector").addEventListener("click", function () {
+  mostrarImagen("../images/hector.png");
+});
+
+document.getElementById("button-alex").addEventListener("click", function () {
+  mostrarImagen("../images/alex.png");
 });
