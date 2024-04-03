@@ -2,25 +2,10 @@ body {
   margin: 0;
   background: #000;
   display: flex; /* Utiliza flexbox */
-  justify-content: center; /* Justifica todo al centro horizontalmente */
+  justify-content: center;  
   align-items: center; /* Centra verticalmente si es necesario */
   color: white; /* Color de texto */
   padding: 4em;
-}
-
-h1 {
-  font-size: 36px; /* Tamaño grande, ajusta según necesites */
-  font-family: Arial, sans-serif; /* Cambia la fuente según prefieras */
-  /* blur the back */
-  text-shadow: 0 0 10px #000;
-  /* z-index: 2; */
-}
-
-.contenedor{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Definir la animación */
@@ -41,9 +26,44 @@ h1 {
 
 /* Animación de entrada */
 @keyframes blur-in {
-  from { filter: blur(50px); }
+  from { filter: blur(60px); }
   to { filter: blur(0); }
 }
+
+/* Estilo para los rectángulos */
+.rectangulo {
+  width: 40em;
+  height: 15em;
+  background-color: #00000034;
+  backdrop-filter: blur(100px);
+  border-radius: 20px; /* Ajusta el valor según el radio que desees */
+  margin: 20px; /* Margen para separar los rectángulos */
+  display: inline-block;
+  animation: blur-in 1.5s ease-out; /* Aplicar la animación */
+}
+
+.mision-vision {
+  display: flex; /* Para que estén en línea */
+  flex-direction: row; /* Para que estén en columna */
+  justify-content: center;
+}
+
+h1 {
+  font-size: 36px; /* Tamaño grande, ajusta según necesites */
+  font-family: Arial, sans-serif; /* Cambia la fuente según prefieras */
+  /* blur the back */
+  text-shadow: 0 0 10px #000;
+  /* z-index: 2; */
+}
+
+.contenedor{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 /* Estilo para el contenido que quieras centrar */
 .contenido-centrado {
