@@ -36,15 +36,15 @@ body {
   height: 15em;
   background-color: #00000034;
   backdrop-filter: blur(100px);
-  border-radius: 20px; /* Ajusta el valor según el radio que desees */
+  border-radius: 20px; /* Ajusta el redondeo de los bordes */
   margin: 20px; /* Margen para separar los rectángulos */
   display: inline-block;
   animation: blur-in 1.5s ease-out; /* Aplicar la animación */
 }
 
 .mision-vision {
-  display: flex; /* Para que estén en línea */
-  flex-direction: row; /* Para que estén en columna */
+  display: flex; /* Para que la forma de display sea flex */
+  flex-direction: row; /* Colocar contenedores en forma de fila */
   justify-content: center;
 }
 
